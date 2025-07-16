@@ -7,7 +7,7 @@ updateTime();
 
 async function getWeather() {
   try {
-    const response = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=Riga,LV&units=metric&appid=YOUR_API_KEY`);
+    const response = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=Riga,LV&units=metric&appid=5f23e5caef8cee25fd6fd599bc8a8bcf`);
     if (!response.ok) throw new Error("Weather fetch failed");
 
     const data = await response.json();
